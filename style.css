@@ -1,0 +1,17 @@
+#container {
+    border: solid 4px gray;
+}
+
+#board {
+    display: flex;
+}
+
+.square {
+    flex: 1;
+    width: 20px;
+    height: 20px;
+}
+
+.square:hover {
+    background: rgb(72, 128, 72);
+}
