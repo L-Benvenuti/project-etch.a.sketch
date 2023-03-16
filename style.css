@@ -1,17 +1,18 @@
 #container {
     border: solid 4px gray;
+    max-width: 320px;
 }
 
 #board {
     display: flex;
+
 }
 
-.square {
-    flex: 1;
+#square {
     width: 20px;
     height: 20px;
 }
 
-.square:hover {
+.color-change {
     background: rgb(72, 128, 72);
 }
