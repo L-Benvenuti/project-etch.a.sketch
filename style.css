@@ -1,18 +1,62 @@
-#container {
-    border: solid 4px gray;
-    max-width: 320px;
+/* Grid */
+:root {
+    --grid-rows: 1;
+    --grid-cols: 1;
 }
 
 #board {
+    display: grid;
+    border: solid 4px gray;
+    max-width: 500px;
+    max-height: 500px;
+    aspect-ratio: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-square:hover {
+    background: #d3d3d3;
+    opacity: 0.5;
+}
+
+/* Color section styling */
+.color-cont {
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
-#square {
-    width: 20px;
-    height: 20px;
+/* Slider section styling */
+.slider-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
 }
 
-.color-change {
-    background: rgb(72, 128, 72);
+.slider {
+    appearance: none;
+    width: 350px;
+    height: 30px;
+    border-radius: 100px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.5; /* Transparency for hover effect */
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 2;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    background: #5dac5de7;
+    cursor: pointer;
 }

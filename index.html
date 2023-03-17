@@ -9,10 +9,18 @@
     <title>Project: Etch a Sketch</title>
 </head>
 <body>
-    <button id="nmbrsqrs">How many squares?</button>
-    <button id="reset">Restart</button>
-    <div id="container">
-    <div id="board"></div>
+    <div class="slider-cont">
+        <input type="range" min="1" max="100" value="16"
+        class="slider" id="size-choice">
+        <p id="output"></p>
+        <button id="set-new-size">Change Size</button>
     </div>
+    <div class="color-cont">
+        <button id="color-choice" value="black">Black</button>
+        <button id="color-choice" value="random">Random</button>
+        <button id="color-choice" value="white">Erase</button>
+    </div>
+    <div id="board"></div><br>
+    <button id="reset">Restart Default</button>
 </body>
 </html>
